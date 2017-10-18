@@ -20,9 +20,69 @@ namespace TTModulzaro
     /// </summary>
     public partial class MainWindow : Window
     {
+        MainViewModel main;
+
+        public Patient Patient { get; private set; }
+
         public MainWindow()
         {
             InitializeComponent();
+            main = new MainViewModel();
+            DataContext = main;
+        }
+
+        private void NewPatient_Click(object sender, RoutedEventArgs e)
+        {
+            var pfvm = new PatientFormViewModel
+            {
+                Patient = new Patient()
+            };
+            var form = new PatientForm()
+            {
+                DataContext = pfvm
+            };
+            form.ShowDialog();
+            if (pfvm.Validate())
+                ((MainViewModel)DataContext).Patients.Add(pfvm.Patient);
+        }
+
+        private void EditPatient_Click(object sender, RoutedEventArgs e)
+        {
+            var SelectedPatient = ((MainViewModel)DataContext).SelectedPatient;
+            if (SelectedPatient == null)
+            {
+                return;
+            }
+            var pfvm = new PatientFormViewModel
+
+            {
+                IsEdit = true,
+                Patient = ((MainViewModel)DataContext).SelectedPatient
+            };
+            var form = new PatientForm()
+            {
+                DataContext = pfvm
+            };
+            form.ShowDialog();
+        }
+
+        private void Threatment_Click(object sender, RoutedEventArgs e)
+        {
+            var SelectedPatient = ((MainViewModel)DataContext).SelectedPatient;
+            if (SelectedPatient == null)
+            {
+                return;
+            }
+            var tvm = new ThreatmentViewModel
+
+            {
+                Patient = ((MainViewModel)DataContext).SelectedPatient
+            };
+            var th = new Threatment()
+            {
+                DataContext = tvm
+            };
+            th.ShowDialog();
         }
     }
 }

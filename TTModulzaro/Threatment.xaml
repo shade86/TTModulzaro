@@ -1,0 +1,39 @@
+﻿<Window x:Class="TTModulzaro.Threatment"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TTModulzaro"
+        mc:Ignorable="d"
+        Title="Kezelési lap" Height="542.05" Width="523.529">
+    <Grid>
+        <ComboBox SelectedItem="{Binding SelectedBNO}" ItemsSource="{Binding BNOs}" VerticalAlignment="Center" Width="180" Height="23" HorizontalAlignment="Left" Margin="146,277,0,211" >
+
+
+        </ComboBox>
+
+        <ListBox SelectedItem="{Binding BNOs}" ItemsSource="{Binding BNOs}" HorizontalAlignment="Left" Height="122" Margin="78,147,0,0" VerticalAlignment="Top" Width="413" SelectionChanged="ListBox_SelectionChanged">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <Label Content="{Binding Name}" ContentStringFormat="BNO: {0}"/>
+                        <Label Content="{Binding Jegyzet}" ContentStringFormat="Jegyzet: {0} "/>
+
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+
+        </ListBox>
+
+        <Label Content="Beteg neve:" HorizontalAlignment="Left" Margin="78,23,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding Patient.Name}" HorizontalAlignment="Left" Margin="168,23,0,0" VerticalAlignment="Top"/>
+        <Label Content="Életkor:" HorizontalAlignment="Left" Margin="78,54,0,0" VerticalAlignment="Top"/>
+        <Label Content="TAJ szám:" HorizontalAlignment="Left" Margin="78,85,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding Patient.TAJ}" HorizontalAlignment="Left" Margin="168,85,0,0" VerticalAlignment="Top"/>
+        <Label Content="Régebbi kezelések:" HorizontalAlignment="Left" Margin="78,116,0,0" VerticalAlignment="Top"/>
+        <Label Content="BNO kód:" HorizontalAlignment="Left" Margin="78,274,0,0" VerticalAlignment="Top"/>
+        <Label Content="Jegyzet:" HorizontalAlignment="Left" Margin="78,315,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="JegyzetTextBox" HorizontalAlignment="Left" Height="117" Margin="78,363,0,0" TextWrapping="Wrap" Text="{Binding SelectedBNO.Jegyzet, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="413"/>
+
+    </Grid>
+</Window>

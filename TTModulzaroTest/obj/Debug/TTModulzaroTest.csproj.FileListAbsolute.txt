@@ -1,0 +1,16 @@
+c:\users\takacstamas\source\repos\TTModulzaro\TTModulzaroTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+c:\users\takacstamas\source\repos\TTModulzaro\TTModulzaroTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+c:\users\takacstamas\source\repos\TTModulzaro\TTModulzaroTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+c:\users\takacstamas\source\repos\TTModulzaro\TTModulzaroTest\bin\Debug\TTModulzaroTest.dll
+c:\users\takacstamas\source\repos\TTModulzaro\TTModulzaroTest\bin\Debug\TTModulzaroTest.pdb
+c:\users\takacstamas\source\repos\TTModulzaro\TTModulzaroTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+c:\users\takacstamas\source\repos\TTModulzaro\TTModulzaroTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+c:\users\takacstamas\source\repos\TTModulzaro\TTModulzaroTest\bin\Debug\TTModulzaro.exe
+c:\users\takacstamas\source\repos\TTModulzaro\TTModulzaroTest\bin\Debug\TTModulzaro.pdb
+c:\users\takacstamas\source\repos\TTModulzaro\TTModulzaroTest\bin\Debug\TTModulzaro.exe.config
+c:\users\takacstamas\source\repos\TTModulzaro\TTModulzaroTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+c:\users\takacstamas\source\repos\TTModulzaro\TTModulzaroTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+c:\users\takacstamas\source\repos\TTModulzaro\TTModulzaroTest\obj\Debug\TTModulzaroTest.csprojResolveAssemblyReference.cache
+c:\users\takacstamas\source\repos\TTModulzaro\TTModulzaroTest\obj\Debug\TTModulzaroTest.csproj.CoreCompileInputs.cache
+c:\users\takacstamas\source\repos\TTModulzaro\TTModulzaroTest\obj\Debug\TTModulzaroTest.dll
+c:\users\takacstamas\source\repos\TTModulzaro\TTModulzaroTest\obj\Debug\TTModulzaroTest.pdb

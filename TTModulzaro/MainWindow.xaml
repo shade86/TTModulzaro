@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TTModulzaro"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Beteglista" Height="350" Width="525">
     <Grid>
-        
+        <ListBox SelectedItem="{Binding SelectedPatient}" ItemsSource="{Binding Patients}" HorizontalAlignment="Left" Height="258" Margin="10,51,0,0" VerticalAlignment="Top" Width="259">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <Label Content="{Binding Name}" ContentStringFormat="Név: {0}"/>
+                        <Label Content="{Binding BornPlace}" ContentStringFormat="Születési hely: {0} "/>
+                        <Label Content="{Binding Born}" ContentStringFormat="Születési idő: {0}"/>
+                        <Label Content="{Binding TAJ}" ContentStringFormat="TAJ szám: {0}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+            
+        </ListBox>
+        <Button x:Name="NewPatient" Content="Új beteg" HorizontalAlignment="Left" Height="34" Margin="274,51,0,0" VerticalAlignment="Top" Width="135" Click="NewPatient_Click"/>
+        <Button x:Name="EditPatient" Content="Adatok módosítása" HorizontalAlignment="Left" Height="34" Margin="274,90,0,0" VerticalAlignment="Top" Width="135" Click="EditPatient_Click"/>
+        <Button x:Name="Threatment" Content="Kezelés" HorizontalAlignment="Left" Margin="274,153,0,0" Height="34" VerticalAlignment="Top" Width="135" Click="Threatment_Click"/>
+
     </Grid>
 </Window>
